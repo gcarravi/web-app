@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CSS Units Exploration</title>
+
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                padding: 20px;
+            }
+            .box {
+                background-color: lightblue;
+                text-align: center;
+                padding: 10px;
+                margin: 10px 0;
+            }
+
+            /* 1. Using pixels (absolute size) */
+            .px-box  {
+                width: 300px;
+                height: 100px;
+                font-size: 16px
+            }
+
+            /* 2. Using percentage (relative to parent container) */
+            .percent-box {
+                width: 80%;
+                height: 50%;
+                font-size: 100%;
+            }
+
+            /* 3. Using em (relative to parent's  font size) */
+            .container {
+                font-size:16px;  /* Baseline font size */
+            }
+
+            .em-box {
+                width: 20em;
+                height: 5em;
+                font-size: 1.5em;
+            }
+
+            /* 4. Using rem (relative to root font size) */
+            html {
+                font-size: 20px;
+            }
+
+            .rem-box {
+                width: 15rem;
+                height: 4rem;
+                font-size: 1.2rem;
+            }
+
+            /* 5. Using viewport units (relative to vindow size) */
+            .pvwvh-box {
+                width: 50vw;
+                height: 20vh;
+                font-size: 2vw;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>CSS Units Exploration</h1>
+        <div class="container">
+            <div class="box px-box">Box using <strong>px</strong></div>
+            <div class="box percent-box">Box using <strong>%</strong></div>
+            <div class="box em-box">Box using <strong>em</strong></div>
+            <div class="box rem-box">Box using <strong>rem</strong></div>
+            <div class="box pvwvh-box">Box using <strong>vw/vh</strong></div>
+        </div>
+    </body>
+</html>
