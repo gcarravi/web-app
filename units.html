@@ -33,31 +33,31 @@
 
             /* 3. Using em (relative to parent's  font size) */
             .container {
-                font-size:16px;  /* Baseline font size */
+                font-size:20px;  /* Baseline font size */
             }
 
-            .em-box {
-                width: 20em;
-                height: 5em;
-                font-size: 1.5em;
+            .em-box {  /* 1em = 16px */
+                width: 20em;        /* 20em * 16px = 320px */
+                height: 5em;        /* 5em * 16px = 80px */
+                font-size: 1.5em;   /* 1.5em * 16px = 24px */
             }
 
             /* 4. Using rem (relative to root font size) */
             html {
-                font-size: 20px;
+                font-size: 25px;    /* Root font size */
             }
 
             .rem-box {
-                width: 15rem;
-                height: 4rem;
-                font-size: 1.2rem;
+                width: 15rem;       /* 15rem * 20px = 300px */
+                height: 4rem;       /* 4rem * 20px = 80px */
+                font-size: 1.2rem;  /* 1.2rem * 20px = 24px */
             }
 
             /* 5. Using viewport units (relative to vindow size) */
             .pvwvh-box {
-                width: 50vw;
-                height: 20vh;
-                font-size: 2vw;
+                width: 50vw;        /* 50% of viewport width */
+                height: 20vh;       /* 20% of viewport height */
+                font-size: 2vw;     /* scales with viewport width */
             }
         </style>
     </head>
